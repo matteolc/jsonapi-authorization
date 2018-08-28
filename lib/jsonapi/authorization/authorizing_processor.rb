@@ -44,6 +44,8 @@ module JSONAPI
         )
 
         resources.each do |resource|
+          # No support for nested model authorization when caching is enabled
+          return if resource.is_a?(::JSONAPI::CachedResourceFragment)
           authorize_model_includes(resource._model)
         end
       end

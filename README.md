@@ -2,6 +2,8 @@
 
 [![Build Status](https://img.shields.io/travis/venuu/jsonapi-authorization/master.svg?style=flat&maxAge=3600)](https://travis-ci.org/venuu/jsonapi-authorization) [![Gem Version](https://img.shields.io/gem/v/jsonapi-authorization.svg?style=flat&maxAge=3600)](https://rubygems.org/gems/jsonapi-authorization)
 
+**IMPORTANT:** This fork allows you to enable caching on a JSONAPI::Resource without throwing an error. Attention! Do not use related resources as they won't be authorized!
+
 **NOTE:** This README is the documentation for `JSONAPI::Authorization`. If you are viewing this at the
 [project page on Github](https://github.com/venuu/jsonapi-authorization) you are viewing the documentation for the `master`
 branch. This may contain information that is not relevant to the release you are using. Please see the README for the
